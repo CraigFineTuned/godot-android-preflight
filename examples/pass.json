@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "toolVersion": "0.1.1",
+  "scope": "FORMAT EXAMPLE ONLY; scripted vendor/transport stubs, not app acceptance",
+  "checks": [
+    {
+      "id": "size",
+      "status": "PASS",
+      "evidence": {
+        "bytes": 166,
+        "maximumBytes": 200000000,
+        "downloadSizeEstimate": false,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "archive_integrity",
+      "status": "PASS",
+      "evidence": {
+        "members": 1,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "elf_16k_load_alignment",
+      "status": "PASS",
+      "evidence": {
+        "libraries": [],
+        "noNativeLibraries": true,
+        "runtime16kProven": false,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "elf_16k_relro_end",
+      "status": "PASS",
+      "evidence": {
+        "libraries": [],
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "identity",
+      "status": "PASS",
+      "evidence": {
+        "package": "org.example.androidpreflight",
+        "versionCode": 1,
+        "versionName": "1.0",
+        "targetApi": 36,
+        "debuggable": false,
+        "permissions": [],
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "version_monotonicity",
+      "status": "PASS",
+      "evidence": {
+        "previousCode": 0,
+        "observedCode": 1,
+        "baselineIsCallerSupplied": true,
+        "reason": "compared with supplied baseline",
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "debug_state",
+      "status": "PASS",
+      "evidence": {
+        "debuggable": false,
+        "releaseBuildProven": false,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "target_api",
+      "status": "PASS",
+      "evidence": {
+        "observed": 36,
+        "minimum": 36,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "permissions",
+      "status": "PASS",
+      "evidence": {
+        "observed": [],
+        "allowed": [
+          "android.permission.INTERNET"
+        ],
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "signature",
+      "status": "PASS",
+      "evidence": {
+        "cryptographicVerificationAttempted": true,
+        "trustedSignerIdentityProven": false,
+        "apkV2Required": true,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "zip_16k_alignment",
+      "status": "PASS",
+      "evidence": {
+        "vendor": "zipalign",
+        "pageKiB": 16,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    },
+    {
+      "id": "emulator_smoke",
+      "status": "PASS",
+      "evidence": {
+        "fixtureOnly": true,
+        "nativeEmulatorObservation": false,
+        "sampleEvidenceOrigin": "synthetic fixture/stub; not real release evidence"
+      }
+    }
+  ],
+  "artifact": {
+    "kind": "apk",
+    "sha256": "1ff7dd635308cda611654951bbf3d07e12a5e3877cc4ba5273d7d075bbdc1ed9",
+    "sizeBytes": 166
+  },
+  "status": "PASS",
+  "sampleKind": "SYNTHETIC",
+  "nativeObservation": false,
+  "cryptographicObservation": false
+}

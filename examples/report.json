@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "toolVersion": "0.1.1",
+  "scope": "current static inspection of generic Godot canary; no current emulator smoke",
+  "checks": [
+    {
+      "id": "size",
+      "status": "PASS",
+      "evidence": {
+        "bytes": 52218928,
+        "maximumBytes": 200000000,
+        "downloadSizeEstimate": false
+      }
+    },
+    {
+      "id": "archive_integrity",
+      "status": "PASS",
+      "evidence": {
+        "members": 131
+      }
+    },
+    {
+      "id": "elf_16k_load_alignment",
+      "status": "PASS",
+      "evidence": {
+        "libraries": [
+          {
+            "member": "lib/arm64-v8a/libc++_shared.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              12288
+            ]
+          },
+          {
+            "member": "lib/arm64-v8a/libgodot_android.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              8192
+            ]
+          },
+          {
+            "member": "lib/x86_64/libc++_shared.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              8192
+            ]
+          },
+          {
+            "member": "lib/x86_64/libgodot_android.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              8192
+            ]
+          }
+        ],
+        "noNativeLibraries": false,
+        "runtime16kProven": false
+      }
+    },
+    {
+      "id": "elf_16k_relro_end",
+      "status": "FAIL",
+      "evidence": {
+        "libraries": [
+          {
+            "member": "lib/arm64-v8a/libc++_shared.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              12288
+            ]
+          },
+          {
+            "member": "lib/arm64-v8a/libgodot_android.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              8192
+            ]
+          },
+          {
+            "member": "lib/x86_64/libc++_shared.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              8192
+            ]
+          },
+          {
+            "member": "lib/x86_64/libgodot_android.so",
+            "loadAlignments": [
+              16384,
+              16384,
+              16384
+            ],
+            "loadAddressOffsetMod16384": [
+              0,
+              0,
+              0
+            ],
+            "relroEndMod16384": [
+              8192
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "identity",
+      "status": "PASS",
+      "evidence": {
+        "package": "org.example.androidpreflight",
+        "versionCode": 1,
+        "versionName": "1.0",
+        "targetApi": 36,
+        "debuggable": false,
+        "permissions": []
+      }
+    },
+    {
+      "id": "version_monotonicity",
+      "status": "PASS",
+      "evidence": {
+        "previousCode": 0,
+        "observedCode": 1,
+        "baselineIsCallerSupplied": true,
+        "reason": "compared with supplied baseline"
+      }
+    },
+    {
+      "id": "debug_state",
+      "status": "PASS",
+      "evidence": {
+        "debuggable": false,
+        "releaseBuildProven": false
+      }
+    },
+    {
+      "id": "target_api",
+      "status": "PASS",
+      "evidence": {
+        "observed": 36,
+        "minimum": 36
+      }
+    },
+    {
+      "id": "permissions",
+      "status": "PASS",
+      "evidence": {
+        "observed": [],
+        "allowed": [
+          "android.permission.INTERNET"
+        ]
+      }
+    },
+    {
+      "id": "signature",
+      "status": "PASS",
+      "evidence": {
+        "cryptographicVerificationAttempted": true,
+        "trustedSignerIdentityProven": false,
+        "apkV2Required": true
+      }
+    },
+    {
+      "id": "zip_16k_alignment",
+      "status": "PASS",
+      "evidence": {
+        "vendor": "zipalign",
+        "pageKiB": 16
+      }
+    },
+    {
+      "id": "emulator_smoke",
+      "status": "UNKNOWN",
+      "evidence": {
+        "reason": "not run; requires APK identity/signature/archive/non-debug gates, explicit emulator serial and --allow-install"
+      }
+    }
+  ],
+  "artifact": {
+    "kind": "apk",
+    "sha256": "322a7c5bfc93d14e6223db4f00eb2276b7faa0453420efba76c8bbffc9fbc507",
+    "sizeBytes": 52218928
+  },
+  "status": "FAIL",
+  "sampleKind": "ACTUAL_STATIC_FAIL",
+  "reviewDate": "2026-10-07"
+}

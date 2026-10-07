@@ -1,0 +1,27 @@
+Android preflight 0.1.1
+Result: FAIL
+Scope: artifact and optional emulator smoke; no Play, gameplay or performance approval.
+Artifact SHA256: 322a7c5bfc93d14e6223db4f00eb2276b7faa0453420efba76c8bbffc9fbc507
+Bytes: 52218928
+Package: org.example.androidpreflight
+Version: 1.0 (code 1)
+Target API: 36
+Debuggable: false
+Permissions: none declared
+size: PASS
+archive_integrity: PASS
+elf_16k_load_alignment: PASS
+elf_16k_relro_end: FAIL
+identity: PASS
+version_monotonicity: PASS
+debug_state: PASS
+target_api: PASS
+permissions: PASS
+signature: PASS
+zip_16k_alignment: PASS
+emulator_smoke: UNKNOWN
+RELRO end mismatch: lib/arm64-v8a/libc++_shared.so; modulo 16384 = [12288]
+RELRO end mismatch: lib/arm64-v8a/libgodot_android.so; modulo 16384 = [8192]
+RELRO end mismatch: lib/x86_64/libc++_shared.so; modulo 16384 = [8192]
+RELRO end mismatch: lib/x86_64/libgodot_android.so; modulo 16384 = [8192]
+UNKNOWN blocks aggregate PASS. See JSON evidence and limitations.

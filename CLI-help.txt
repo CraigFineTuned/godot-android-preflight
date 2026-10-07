@@ -1,0 +1,36 @@
+usage: preflight.py [-h] --sdk SDK --package PACKAGE --version-code
+                    VERSION_CODE [--version-name VERSION_NAME]
+                    [--previous-code PREVIOUS_CODE] --min-target MIN_TARGET
+                    --max-bytes MAX_BYTES
+                    [--allow-permission ALLOW_PERMISSION]
+                    [--bundletool BUNDLETOOL]
+                    [--smoke-emulator SMOKE_EMULATOR] [--allow-install]
+                    [--observe-installed] [--expect-canary]
+                    [--evidence-dir EVIDENCE_DIR] --json JSON --text TEXT
+                    artifact
+
+Private Android preflight v0.1.1. No signing, publishing, network or auto-
+install.
+
+positional arguments:
+  artifact
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --sdk SDK
+  --package PACKAGE
+  --version-code VERSION_CODE
+  --version-name VERSION_NAME
+  --previous-code PREVIOUS_CODE
+  --min-target MIN_TARGET
+  --max-bytes MAX_BYTES
+  --allow-permission ALLOW_PERMISSION
+  --bundletool BUNDLETOOL
+  --smoke-emulator SMOKE_EMULATOR
+  --allow-install
+  --observe-installed   require exact installed APK SHA256; no
+                        install/overwrite
+  --expect-canary
+  --evidence-dir EVIDENCE_DIR
+  --json JSON
+  --text TEXT

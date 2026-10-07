@@ -1,0 +1,284 @@
+{
+  "reviewDate": "2026-10-07",
+  "toolVersion": "0.1.1",
+  "portableTests": {
+    "passed": 49,
+    "failed": 0
+  },
+  "actualVendorArtifactControls": {
+    "controls": [
+      {
+        "control": "signed generic canary positive",
+        "check": "signature",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "signed generic canary positive",
+        "check": "identity",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "signed generic canary positive",
+        "check": "debug_state",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "signed generic canary positive",
+        "check": "target_api",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "signed generic canary positive",
+        "check": "permissions",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "signed generic canary positive",
+        "check": "size",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "signed generic canary positive",
+        "check": "elf_16k_load_alignment",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "signed generic canary positive",
+        "check": "zip_16k_alignment",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "wrong package",
+        "check": "identity",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "wrong code",
+        "check": "identity",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "wrong name",
+        "check": "identity",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "non-monotonic code",
+        "check": "version_monotonicity",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "target below configured minimum",
+        "check": "target_api",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "oversize",
+        "check": "size",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "unsigned APK",
+        "check": "signature",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "debug APK",
+        "check": "debug_state",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "tampered APK",
+        "check": "signature",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "real declared unapproved permission",
+        "check": "permissions",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "4KiB ELF",
+        "check": "elf_16k_load_alignment",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "bad RELRO end",
+        "check": "elf_16k_relro_end",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "unaligned native ZIP",
+        "check": "zip_16k_alignment",
+        "passed": true,
+        "observedExit": 1
+      },
+      {
+        "control": "aligned native ZIP",
+        "check": "zip_16k_alignment",
+        "passed": true,
+        "observedExit": 0
+      },
+      {
+        "control": "vendor ELF comparison",
+        "check": "elf_16k_load_alignment",
+        "alignment": 4096,
+        "passed": true
+      },
+      {
+        "control": "vendor ELF comparison",
+        "check": "elf_16k_load_alignment",
+        "alignment": 16384,
+        "passed": true
+      },
+      {
+        "control": "observed signed AAB positive",
+        "check": "identity",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "observed signed AAB positive",
+        "check": "debug_state",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "observed signed AAB positive",
+        "check": "target_api",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "observed signed AAB positive",
+        "check": "permissions",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "observed signed AAB positive",
+        "check": "signature",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "observed signed AAB positive",
+        "check": "size",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "unsigned AAB",
+        "check": "signature",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "AAB unsigned appended entry",
+        "check": "signature",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "AAB wrong code",
+        "check": "identity",
+        "expected": "FAIL",
+        "observed": "FAIL",
+        "passed": true
+      },
+      {
+        "control": "AAB missing manifest decoder",
+        "check": "identity",
+        "expected": "UNKNOWN",
+        "observed": "UNKNOWN",
+        "passed": true
+      },
+      {
+        "control": "observed code1 above supplied baseline0",
+        "check": "version_monotonicity",
+        "expected": "PASS",
+        "observed": "PASS",
+        "passed": true
+      },
+      {
+        "control": "missing prior-code baseline",
+        "check": "version_monotonicity",
+        "expected": "UNKNOWN",
+        "observed": "UNKNOWN",
+        "passed": true
+      }
+    ],
+    "total": 36,
+    "passed": 36,
+    "tools": {
+      "buildTools": "36.1.0",
+      "bundletool": "1.18.3",
+      "jdk": "17",
+      "ndk": "28.0.12674087"
+    },
+    "fixtureKinds": "asset-free Godot canary, resource-only SDK APK/AAB, synthetic ELF and ZIP"
+  },
+  "currentEmulatorSmoke": "UNKNOWN / no connected emulator",
+  "historicalNativeSmoke": {
+    "status": "PASS",
+    "toolVersion": "0.1.0",
+    "artifactSha256": "322a7c5bfc93d14e6223db4f00eb2276b7faa0453420efba76c8bbffc9fbc507",
+    "scope": "prior generic canary foreground/two native frames; no current motion/16KB/device proof"
+  },
+  "samplePass": "SYNTHETIC format illustration, vendor/transport stubs",
+  "sampleFail": "ACTUAL current Godot canary RELRO-end finding",
+  "testedTools": {
+    "buildTools": "36.1.0",
+    "bundletool": "1.18.3",
+    "jdk": "17",
+    "ndk": "28.0.12674087"
+  }
+}

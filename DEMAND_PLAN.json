@@ -1,0 +1,27 @@
+{
+  "experiment": "Free Android preflight demand probe",
+  "status": "PREREGISTERED_PRIVATE_NOT_LAUNCHED",
+  "durationDays": 30,
+  "start": "Timestamp of owner-authorised first public downloadable release",
+  "price": 0,
+  "newSpend": 0,
+  "thresholdsFrozen": true,
+  "success": ">=30 downloads/uses OR >=10 repository stars OR >=3 substantive external bug/feature reports from distinct users",
+  "weakSignal": "5-29 downloads/uses with no substantive engagement",
+  "kill": "<5 downloads/uses after a reasonable discoverability attempt",
+  "reasonableDiscoverability": "An indexed public repository/release, a Godot/Android-focused README and up to two owner-approved free posts to relevant existing developer channels during the first seven days; obey channel rules and do not spam or invent contacts.",
+  "measures": {
+    "downloads": "Release-asset download-count deltas, excluding known owner/internal tests; clones/views are not downloads or verified use. Unknown bot/repeat activity is disclosed.",
+    "stars": "Net repository stars at day 30 excluding known owner/internal accounts; do not solicit reciprocal/artificial stars.",
+    "feedback": "Substantive independent external reports with an actionable reproducible finding, useful compatibility evidence or a concrete developer workflow need; exclude spam, praise, internal tests and duplicates. Multiple messages on one finding count once. The success threshold requires at least three distinct external users; one user cannot count three times. The success threshold requires at least three distinct external users; one user cannot count three times.",
+    "uses": "Voluntarily reported actual use, deduplicated where feasible; no telemetry or invented conversion denominator. Never add a user's self-report to downloads as a second download.",
+    "adoption": "Use the larger of eligible download count or deduplicated verified-use count, never their sum; disclose uncertain repeats/bots. Preserve each raw measure."
+  },
+  "collection": "Freeze package/hash and release timestamp; record counters on days 0, 7, 14 and 30 with dated source evidence. Keep private raw feedback separate from public samples.",
+  "interpretation": "Evaluate SUCCESS first. Then WEAK if its exact conditions hold. Apply KILL only with the registered discoverability attempt evidenced. Other combinations or missing measurement/discoverability are INCONCLUSIVE, not threshold changes. Report genuine engagement below three separately. No revenue or causality inference from free adoption.",
+  "ownerGate": "Approve exact sanitised package, MIT rights/attribution, public repository/release destination and exact discovery-post text/channels before any publication or sending.",
+  "nextPaidDecision": "Only after demand evidence; no paid layer, subscription, account action or spend in this probe.",
+  "hypothesis": "Godot Android developers will use a free release-preflight tool that catches Android release problems and produces rejectable evidence.",
+  "prelaunchClarificationDate": "2026-10-07",
+  "noResultsObserved": true
+}

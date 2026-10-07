@@ -1,0 +1,24 @@
+SYNTHETIC FORMAT EXAMPLE: vendor/transport stubs; not real artifact acceptance.
+Android preflight 0.1.1
+Result: PASS
+Scope: artifact and optional emulator smoke; no Play, gameplay or performance approval.
+Artifact SHA256: 1ff7dd635308cda611654951bbf3d07e12a5e3877cc4ba5273d7d075bbdc1ed9
+Bytes: 166
+Package: org.example.androidpreflight
+Version: 1.0 (code 1)
+Target API: 36
+Debuggable: false
+Permissions: none declared
+size: PASS
+archive_integrity: PASS
+elf_16k_load_alignment: PASS
+elf_16k_relro_end: PASS
+identity: PASS
+version_monotonicity: PASS
+debug_state: PASS
+target_api: PASS
+permissions: PASS
+signature: PASS
+zip_16k_alignment: PASS
+emulator_smoke: PASS
+UNKNOWN blocks aggregate PASS. See JSON evidence and limitations.
